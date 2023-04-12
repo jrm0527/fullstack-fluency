@@ -1,0 +1,5 @@
+### Get all tasks
+GET http://localhost:3000/api/tasks
+
+### Get specific task
+GET http://localhost:3000/api/tasks/1
