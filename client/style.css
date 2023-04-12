@@ -1,0 +1,51 @@
+body {
+  background-image: linear-gradient(#eddec2, #baac8e);
+  height: 99vh;
+}
+
+.content-container {
+  height: 70%;
+  /* background-color: #eaedf0; */
+}
+
+.menu {
+  align-content: center;
+  /* background-color: #b2d6ff; */
+}
+
+#button-container {
+  align-self: center;
+}
+
+#buttons {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.menu-buttons {
+  /* float: left; */
+  height: 50px;
+  width: 200px;
+}
+
+#task-content {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background-color: #f5cf8e; /* Yellow */
+}
+
+#task-name-header {
+  width: 92%;
+}
+#task-checkbox-header {
+  width: 5%;
+}
+#task-save-header {
+  width: 10%;
+}
+
+.name-text {
+  width: 95%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">
+      <h1 id="title-text">TO-DO LIST</h1>
+      <div id="button-container">
+        <div id="buttons">
+          <button class="menu-buttons" id="show-tasks">SHOW ALL TASKS</button>
+          <button class="menu-buttons" id="add-task">ADD TASK</button>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div id="task-content">
+        <div class="container" id="table-container">
+          <table class="table">
+            <tbody id="task-table">
+              <!-- <tr>
+                <th id="task-name-header">Task Name</th>
+                <th id="task-checkbox-header"></th>
+                <th id="task-save-header"></th>
+              </tr> -->
+            </tbody>
+            <!-- <tr>
+              <td>
+                <input type="text" class="name-text" id="task1Name" />
+              </td>
+              <td>
+                <input type="checkbox" class="task-checkbox" />
+              </td>
+              <td>
+                <button class="task-buttons" id="save-task">Save</button>
+              </td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

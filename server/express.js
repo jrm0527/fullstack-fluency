@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000;
 app.get("/api/tasks", async (req, res, next) => {
   try {
     const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-    const { rows } = await pool.query("SELECT * FROM task");
+    const { rows } = await pool.query("SELECT * FROM task ORDER BY id ASC");
     res.send(rows);
     pool.end();
   } catch (error) {
@@ -87,7 +87,7 @@ app.patch("/api/tasks/:taskId", async (req, res, next) => {
 
   const query = {
     text: "UPDATE task SET task = COALESCE($2, task), complete = COALESCE($3, complete) WHERE id = $1 RETURNING *",
-    values: [taskId, taskName || null, completed || null],
+    values: [taskId, taskName || null, completed],
   };
   try {
     const pool = new Pool({ connectionString: process.env.DATABASE_URL });
