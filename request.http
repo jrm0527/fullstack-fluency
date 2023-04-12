@@ -3,3 +3,30 @@ GET http://localhost:3000/api/tasks
 
 ### Get specific task
 GET http://localhost:3000/api/tasks/1
+
+### Add new task
+POST http://localhost:3000/api/tasks/
+Content-Type: application/json
+
+{
+    "task": "Make grocery list"
+}
+
+### Delete task
+DELETE http://localhost:3000/api/tasks/4
+
+### Mark task complated
+PATCH http://localhost:3000/api/tasks/2
+Content-Type: application/json
+
+{
+    "complete": true
+}
+
+### Change task name
+PATCH http://localhost:3000/api/tasks/2
+Content-Type: application/json
+
+{
+    "task": "Clean the kitchen and bathroom"
+}
